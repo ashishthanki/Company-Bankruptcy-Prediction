@@ -5,7 +5,7 @@ version = "0.1.0"
 homepage = "https://github.com/ashishthanki/company_bankruptcy_predictor"
 description = "Top-level package for Company Bankruptcy Predictor."
 authors = ["Ashish Thanki"]
-readme = "README.rst"
+readme = "README.md"
 license =  "MIT"
 classifiers=[
     'Development Status :: 2 - Pre-Alpha',
@@ -15,7 +15,7 @@ classifiers=[
     'Programming Language :: Python :: 3',
 ]
 packages = [
-    { include = "company_bankruptcy_predictor" },
+    { include = "src" },
     { include = "tests", format = "sdist" },
 ]
 
@@ -26,8 +26,8 @@ pandas = "^2.0.0"
 scikit-learn = "^1.2.2"
 numpy = "^1.24.2"
 seaborn = "^0.12.2"
-llvmlite = "^0.39.1"
 synergy = "^0.5.1"
+jupyterlab = "^3.6.3"
 
 [tool.poetry.dev-dependencies]
 bumpversion = "*"
