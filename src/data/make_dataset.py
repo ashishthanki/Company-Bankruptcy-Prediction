@@ -4,11 +4,11 @@ from pathlib import Path
 import pandas as pd
 
 
-def load_data(file: str = "data/raw/data.csv") -> pd.DataFrame:
+def load_data(file: Path) -> pd.DataFrame:
     """Loads raw company bankruptcy data.
 
     Args:
-        file (str, optional): Path to raw data file. Defaults to "data/raw/data.csv".
+        file (Path): Path to raw data file. Defaults to "data/raw/data.csv".
 
     Raises:
         FileNotFoundError: Raises error if file not found in directory. Pull data from kaggle site.
